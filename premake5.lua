@@ -16,8 +16,12 @@ project "GameEngine"
 	location "GameEngine"
 	kind "SharedLib"
 	language "C++"
+
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+	pchheader "enpch.h"
+	pchsource "%{prj.name}/src/enpch.cpp"
 
 	files{
 		"%{prj.name}/src/**.h",
