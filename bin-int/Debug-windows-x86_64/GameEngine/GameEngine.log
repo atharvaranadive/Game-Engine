@@ -1,14 +1,6 @@
-﻿  enpch.cpp
-  Application.cpp
-D:\Programs\GameEngine\GameEngine\src\GameEngine\Log.h(20,42): warning C4251: 'Engine::Log::s_CoreLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Engine::Log'
-D:\Programs\GameEngine\GameEngine\vendor\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
-D:\Programs\GameEngine\GameEngine\src\GameEngine\Log.h(21,42): warning C4251: 'Engine::Log::s_ClientLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Engine::Log'
-D:\Programs\GameEngine\GameEngine\vendor\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
-  Log.cpp
-D:\Programs\GameEngine\GameEngine\src\GameEngine\Log.h(20,42): warning C4251: 'Engine::Log::s_CoreLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Engine::Log'
-D:\Programs\GameEngine\GameEngine\vendor\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
-D:\Programs\GameEngine\GameEngine\src\GameEngine\Log.h(21,42): warning C4251: 'Engine::Log::s_ClientLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Engine::Log'
-D:\Programs\GameEngine\GameEngine\vendor\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
-  Generating Code...
+﻿  Application.cpp
+D:\Programs\GameEngine\GameEngine\src\GameEngine\Application.h(20,27): warning C4251: 'Engine::Application::m_Window': class 'std::unique_ptr<Engine::Window,std::default_delete<Engine::Window>>' needs to have dll-interface to be used by clients of class 'Engine::Application'
+D:\Programs\GameEngine\GameEngine\src\GameEngine\Application.h(20): message : see declaration of 'std::unique_ptr<Engine::Window,std::default_delete<Engine::Window>>'
      Creating library ..\bin\Debug-windows-x86_64\GameEngine\GameEngine.lib and object ..\bin\Debug-windows-x86_64\GameEngine\GameEngine.exp
+LINK : warning LNK4098: defaultlib 'MSVCRTD' conflicts with use of other libs; use /NODEFAULTLIB:library
   GameEngine.vcxproj -> D:\Programs\GameEngine\bin\Debug-windows-x86_64\GameEngine\GameEngine.dll

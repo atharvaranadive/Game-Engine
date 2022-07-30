@@ -11,4 +11,11 @@
 	#error Engine is only supported on Windows
 #endif
 
+#ifdef EN_ENABLE_ASSERTS
+	#define EN_ASSERT(x,...) {if(!(x)) { EN_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak();}}
+	#define EN_CORE_ASSERT(x,...) {if(!(x)) { EN_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak();}}
+#else
+	#define EN_ASSERT(x,...)
+	#define EN_CORE_ASSERT(x,...)
+#endif
 #define BIT(x) (1 << x)

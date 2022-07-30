@@ -1,8 +1,6 @@
 #pragma once
 #include "enpch.h"
 #include "GameEngine/Core.h"
-#include <string>
-#include <functional>
 
 
 namespace Engine {
