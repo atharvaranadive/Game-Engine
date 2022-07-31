@@ -36,7 +36,6 @@ namespace Engine {
 		inline bool IsInCategory(EventCategory category) {
 			return GetCategoryFlags() & category;
 		}
-	protected:
 		bool m_Handled = false;
 	};
 
