@@ -1,2 +1,2 @@
 # Game-Engine
-Game Engine in C++
+Game Engine in C++ from scratch
